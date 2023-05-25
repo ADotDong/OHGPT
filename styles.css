@@ -24,15 +24,13 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
-    display: block;
-    clear: both;
     max-width: 70%;
 }
 
 .user-bubble {
     background-color: #007bff;
     color: #fff;
-    float: right;
+    float: none;
     clear: both;
     margin-left: auto;
 }
@@ -40,7 +38,7 @@ body {
 .assistant-bubble {
     background-color: #e2e2ea;
     color: #333;
-    float: left;
+    float: none;
     clear: both;
     margin-right: auto;
 }
