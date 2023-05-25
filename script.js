@@ -36,4 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
             bubble.classList.add(className);
         }
         bubble.textContent = message;
-        return
+        return bubble;
+    }
+
+    function sendToBackend(message) {
+        // Send the message to the backend (API call or processing logic)
+        // Receive the response from the backend and call displayAssistantMessage()
+        var response = "Response from the backend"; // Replace with actual response
+        displayAssistantMessage(response);
+    }
+});
