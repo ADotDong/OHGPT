@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var userInput = document.getElementById("user-input");
     var sendButton = document.getElementById("send-button");
 
-    sendButton.addEventListener("click", sendMessage);
+    sendButton.addEventListener("click", sendMessage());
     userInput.addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             sendMessage();
