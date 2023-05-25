@@ -24,7 +24,8 @@ body {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 20px;
-    display: inline-block;
+    display: block;
+    clear: both;
     max-width: 70%;
 }
 
@@ -32,6 +33,16 @@ body {
     background-color: #007bff;
     color: #fff;
     float: right;
+    clear: both;
+    margin-left: auto;
+}
+
+.assistant-bubble {
+    background-color: #e2e2ea;
+    color: #333;
+    float: left;
+    clear: both;
+    margin-right: auto;
 }
 
 .chat-input {
