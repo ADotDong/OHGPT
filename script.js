@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function() {
             displayUserMessage(userMessage);
             sendToBackend(userMessage);
             userInput.value = "";
+            simulateSending();
         }
     }
 
@@ -44,5 +45,14 @@ document.addEventListener("DOMContentLoaded", function() {
         // Receive the response from the backend and call displayAssistantMessage()
         var response = "Response from the backend"; // Replace with actual response
         displayAssistantMessage(response);
+    }
+
+    function simulateSending() {
+        var bubbles = chatMessages.getElementsByClassName("user-bubble");
+        var lastBubble = bubbles[bubbles.length - 1];
+        lastBubble.textContent = "Sending...";
+        setTimeout(function() {
+            lastBubble.textContent = userInput.value.trim();
+        }, 1000); // Change the duration as desired
     }
 });
